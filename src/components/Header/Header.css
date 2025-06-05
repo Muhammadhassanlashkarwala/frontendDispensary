@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header_college_details {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 8px;
+  border-top: 3px solid #252674;
+}
+.header_college_details_left {
+  display: flex;
+  /* gap: 5px; */
+}
+.header_college_details_left_logo {
+  width: 50%;
+  border-radius: 50%;
+  height: 100px;
+}
+.header_college_details_name {
+  font-weight: 600;
+  font-size: 17px;
+  color: rgb(25, 25, 63);
+}
+.header_college_details_place {
+  font-weight: 600;
+  color: rgb(102, 130, 27);
+}
