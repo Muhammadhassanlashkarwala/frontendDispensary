@@ -31,12 +31,8 @@
 .header_college_details_place {
   font-weight: 600;
   font-size: 15px;
-  /* color: rgb(102, 130, 27); */
   color: #538bb0;
 }
-/* .header_college_details_right{
-
-} */
 .header_college_social_media {
   display: flex;
   gap: 20px;

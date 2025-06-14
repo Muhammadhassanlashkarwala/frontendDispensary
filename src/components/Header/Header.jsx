@@ -30,7 +30,7 @@ const Header = () => {
                 alt="youtube_logo"
               />
             </a>
-            <a href="https://www.facebook.com/@MuhammadHassan" target="_blank">
+            <a href="https://www.facebook.com/" target="_blank">
               <img
                 src="https://cdn-icons-png.flaticon.com/128/733/733547.png"
                 className="header_social_media_image"
@@ -44,10 +44,7 @@ const Header = () => {
                 alt="twitter_logo"
               />
             </a>
-            <a
-              href="https://www.instagram.com/@hassan._owais_555"
-              target="_blank"
-            >
+            <a href="https://www.instagram.com/" target="_blank">
               <img
                 src="https://th.bing.com/th/id/OIP.0wjhvLpjGf_-r-1lqG3QAQHaHw?rs=1&pid=ImgDetMain"
                 className="header_social_media_image"
