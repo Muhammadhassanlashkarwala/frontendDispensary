@@ -15,16 +15,40 @@
   /* gap: 5px; */
 }
 .header_college_details_left_logo {
-  width: 50%;
+  width: 46%;
   border-radius: 50%;
-  height: 100px;
+  height: 99px;
+}
+.names {
+  padding-top: 15px;
 }
 .header_college_details_name {
   font-weight: 600;
-  font-size: 17px;
+  /* padding-top: 10px; */
+  font-size: 15px;
   color: rgb(25, 25, 63);
 }
 .header_college_details_place {
   font-weight: 600;
-  color: rgb(102, 130, 27);
+  font-size: 15px;
+  /* color: rgb(102, 130, 27); */
+  color: #538bb0;
+}
+/* .header_college_details_right{
+
+} */
+.header_college_social_media {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  padding: 13px;
+}
+.header_social_media_image {
+  width: 26px;
+  height: 26px;
+}
+.header_input_tags {
+  width: 200px;
+  outline: none;
+  border: 2px solid #538bb0;
 }
