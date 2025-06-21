@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const Header = () => {
   return (
     <div className="header">
@@ -54,6 +54,30 @@ const Header = () => {
           </div>
           <input type="text" className="header_input_tags" />
         </div>
+      </div>
+
+      <div className="navbar">
+        <div className="navbar_links">Home</div>
+        <div className="navbar_links">Login</div>
+        <div className="navbar_links">Stock View</div>
+        <div className="navbar_links">
+          New Events <ArrowDropDownIcon />
+        </div>
+        <div className="navbar_links">
+          Helpline <ArrowDropDownIcon />
+        </div>
+      </div>
+
+      <div className="header_banner">
+        {/* <img
+          src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-taobao-simple-style-educational-institution-banner-image_167376.jpg"
+          alt="header_banner_image" 
+        /> */}
+        <img
+          src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/white-and-royal-blue-education-banner-template-9m8jbj82c00174.webp"
+          alt="header_banner_image"
+          className="header_banner_image"
+        />
       </div>
     </div>
   );
