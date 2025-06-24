@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const Header = () => {
+  const [eventpopup, setEventpopup] = useState(false);
+  const [helpline, setHelpline] = useState(false);
+
+  const handleOpenPopup = (popup) => {
+    if (popup === "event") {
+      setEventpopup(true);
+    } else {
+      setHelpline(true);
+    }
+  };
+
+  const handleClosePopup = (popup) => {
+    if (popup === "event") {
+      setEventpopup(false);
+    } else {
+      setHelpline(false);
+    }
+  };
   return (
     <div className="header">
       <div className="header_college_details">
@@ -60,27 +78,63 @@ const Header = () => {
         <div className="navbar_links">Home</div>
         <div className="navbar_links">Login</div>
         <div className="navbar_links">Stock View</div>
-        <div className="navbar_links">
-          New Events <ArrowDropDownIcon />
+        <div
+          className="navbar_links event_links"
+          onMouseEnter={() => {
+            handleOpenPopup("event");
+          }}
+          onMouseLeave={() => {
+            handleClosePopup("event");
+          }}
+        >
+          <div className="navbar_link_opt">
+            New Events <ArrowDropDownIcon />
+          </div>
+          {eventpopup && (
+            <div className="navbar_dropdown event_pop">
+              <div className="popup_notification">
+                . Celebration Kashmir Day
+              </div>
+              <div className="popup_notification">
+                . Celebration Eid-Milad-Un-Nabi
+              </div>
+            </div>
+          )}
         </div>
-        <div className="navbar_links">
-          Helpline <ArrowDropDownIcon />
+        <div
+          className="navbar_links event_links"
+          onMouseEnter={() => {
+            handleOpenPopup("events");
+          }}
+          onMouseLeave={() => {
+            handleClosePopup("events");
+          }}
+        >
+          <div className="navbar_link_opt">
+            Helpline <ArrowDropDownIcon />
+          </div>
+          {helpline && (
+            <div className="navbar_dropdown event_pop">
+              <div className="popup_notification">. 24/7 Institute Open !</div>
+              <div className="popup_notification">
+                . Proper Management Service
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
       <div className="header_banner">
         {/* <img
-          src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-taobao-simple-style-educational-institution-banner-image_167376.jpg"
-          alt="header_banner_image" 
-        /> */}
-        <img
           src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/white-and-royal-blue-education-banner-template-9m8jbj82c00174.webp"
           alt="header_banner_image"
           className="header_banner_image"
-        />
+        /> */}
       </div>
     </div>
   );
 };
 
 export default Header;
+
+// 1:03

@@ -73,11 +73,15 @@
 }
 .header_banner {
   width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
+  height: 400px;
+  /* display: flex;
+  justify-content: center; */
+  background-image: url(https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/white-and-royal-blue-education-banner-template-9m8jbj82c00174.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.header_banner_image {
+/* .header_banner_image {
   width: 100%;
   height: 100%;
-}
+} */
