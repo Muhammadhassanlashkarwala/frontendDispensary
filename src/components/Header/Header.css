@@ -50,7 +50,7 @@
 }
 .navbar {
   width: 100%;
-  height: 65%;
+  height: 65px;
   color: white;
   background-color: #1f67ea;
   display: flex;
@@ -65,6 +65,7 @@
   text-decoration: none;
   user-select: none;
   display: flex;
+  color: white;
   padding: 20px;
   border-radius: 5px;
 }
@@ -73,7 +74,7 @@
 }
 .header_banner {
   width: 100%;
-  height: 400px;
+  height: 360px;
   /* display: flex;
   justify-content: center; */
   background-image: url(https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/white-and-royal-blue-education-banner-template-9m8jbj82c00174.webp);

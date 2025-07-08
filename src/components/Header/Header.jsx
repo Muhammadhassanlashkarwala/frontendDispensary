@@ -93,10 +93,10 @@ const Header = () => {
           {eventpopup && (
             <div className="navbar_dropdown event_pop">
               <div className="popup_notification">
-                . Celebration Kashmir Day
+                . Celebration Eid-ul-Fitr Day
               </div>
               <div className="popup_notification">
-                . Celebration Eid-Milad-Un-Nabi
+                . Celebration Eid-ul-Adha Day
               </div>
             </div>
           )}
