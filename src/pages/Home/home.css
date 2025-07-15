@@ -54,3 +54,15 @@
   text-align: center;
   background-color: #1f67ea;
 }
+.home-right-section {
+  margin-top: 10px;
+  border: 2px solid black;
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 15px;
+}
+.active-pop {
+  background-color: #1f67ea;
+  color: white !important;
+}
