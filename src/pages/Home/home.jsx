@@ -6,6 +6,10 @@ import Diversity3Icon from "@mui/icons-material/Diversity3";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import About from "../../components/AboutUs/about";
+import Staff from "../../components/Staffs/staff";
+import Facilities from "../../components/Facilities/facilities";
+import Nearbyhospitals from "../../components/NearByHospitals/nearbyhospitals";
+import Gallery from "../../components/Gallery/gallery";
 const Home = () => {
   const [page, setPage] = useState("About");
   let [rightSideHeader, setRightSideHeader] = useState("About Us");
@@ -32,14 +36,27 @@ const Home = () => {
   };
 
   const getComponent = () => {
-    return page === "About" ? <About /> : null;
-    // switch (page) {
-    //   case "About":
-    //     return <About />;
+    // return page === "About" ? <About /> : null;
 
-    //   default:
-    //     return null;
-    // }
+    switch (page) {
+      case "About":
+        return <About />;
+
+      case "Staff":
+        return <Staff />;
+
+      case "Facilities":
+        return <Facilities />;
+
+      case "NearByHospitals":
+        return <Nearbyhospitals />;
+
+      case "Gallery":
+        return <Gallery />;
+
+      default:
+        return null;
+    }
   };
 
   return (
